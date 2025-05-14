@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - Digital Gram Panchayat</title>
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-left">
+      <img src="assets/4.png" alt="Logo">
+      <span class="brand-text">Digital Gram Panchayat</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="home.html" id="homeLink"  class="active">🏡Home</a></li>
+      <li><a href="about.html">About Us</a></li> 
+      <li><a href="index.html" id="loginLink">Login</a></li>
+      <li><a href="index.html" id="registerLink">Register</a></li>
+      <li><a href="logout.html" id="logoutLink" style="display:none;">🚪Logout</a></li>
+    </ul>
+  </nav>
+
+  <section class="welcome-hero">
+    <div class="welcome-content">
+      
+      <img src="assets/4.png" alt="DGP Logo" class="hero-logo" />
+      <div class="hero-text">
+        <div id="welcomeMessage"></div>
+        <h1>Welcome to Digital Gram Panchayat</h1>
+
+       
+        
+        <p id="nonauthUser">
+          Bringing essential government services to your doorstep—fast, transparent and
+          fully digital. Sign in to apply for schemes, track your applications, and
+          engage with your local Panchayat online.
+        </p>
+        <a href="../components/index.html" class="hero-btn">Get Started</a>
+      </div>
+    </div>
+   
+  </section>
+
+  <section class="dgp-gallery-section">
+    <h2 class="gallery-title">Initiatives Under Digital Gram Panchayat</h2>
+    
+    <div class="gallery-showcase">
+      <div class="gallery-card">
+        <img src="assets/1.png" alt="Digital Village">
+        <div class="gallery-caption">
+          <h3>Empowering Villages</h3>
+          <p>Smart governance initiatives reaching the grassroots level.</p>
+        </div>
+      </div>
+  
+      <div class="gallery-card">
+        <img src="assets/2.png" alt="PM Modi">
+        <div class="gallery-caption">
+          <h3>Leadership Support</h3>
+          <p>Inspired by the vision of PM Narendra Modi for Digital India.</p>
+        </div>
+      </div>
+  
+      <div class="gallery-card">
+        <img src="assets/3.png" alt="Services Digitalized">
+        <div class="gallery-caption">
+          <h3>Transparent Services</h3>
+          <p>Faster schemes, smoother application & instant verification.</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="description">
+      <p>
+        The Digital Gram Panchayat initiative aims to bridge the digital divide by bringing essential government services 
+        directly to the rural population. Experience fast, transparent, and tech-driven governance.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Applied Services -->
+  <section class="applied-services" id="appliedServicesSection" style="display: none;">
+    <h2>Your Applied Services</h2>
+    <div id="appliedServicesList" class="services-container"></div>
+  </section>
+  
+
+
+  <!-- Available Services -->
+  <h2>Available Services</h2>
+<!-- 🔍 Search Input Box -->
+<div class="search-wrapper">
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="Search services..."
+    class="search-box"
+  />
+</div>
+
+
+  <div class="services-container" id="servicesList">
+    <!-- Dynamic service cards go here -->
+  </div>
+
+  <footer>
+    &copy; 2025 Digital Gram Panchayat | All rights reserved.
+  </footer>
+
+  <div id="draggableCta" class="floating-cta" title="Explore Available Services">
+    <div class="cta-text">
+      <strong>Explore Services</strong><br>
+      <small>Wanna see available services?</small>
+    </div>
+    <div class="cta-icon">➡️</div>
+  </div>
+  
+  
+</body>
+
+</html>
+ <script type="module" src="home.js"></script>

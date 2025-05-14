@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f9fd;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+
+.brand-text {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+
+
+
+.applications-section {
+  max-width: 1100px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.application-card {
+  background-color: #f9fcff;
+  border-left: 6px solid #1c4e80;
+  border-radius: 8px;
+  padding: 1.2rem 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.application-card h3 {
+  color: #205295;
+}
+
+.application-card p {
+  margin: 0.3rem 0;
+  color: #444;
+}
+
+.status {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.status.pending {
+  color: orange;
+}
+
+.status.approved {
+  color: green;
+}
+
+.status.rejected {
+  color: red;
+}
+
+.card-actions button {
+  margin-right: 10px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.approve-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.reject-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+footer {
+  background: #1c4e80;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}

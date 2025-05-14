@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Applications - Admin | Digital Gram Panchayat</title>
+  <link rel="stylesheet" href="nav.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f4f9fd;
+      color: #333;
+    }
+
+
+
+    /* Applications Section */
+    .applications-section {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    }
+
+    .applications-section h2 {
+      text-align: center;
+      color: #1c4e80;
+      margin-bottom: 1.5rem;
+    }
+
+    .application-card {
+      background-color: #f9fcff;
+      border-left: 6px solid #1c4e80;
+      border-radius: 8px;
+      padding: 1.2rem 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .application-card h3 {
+      color: #205295;
+      margin-bottom: 0.5rem;
+    }
+
+    .application-card p {
+      margin: 0.3rem 0;
+      color: #444;
+    }
+
+    .status {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .status.pending {
+      color: orange;
+    }
+
+    .status.approved {
+      color: green;
+    }
+
+    .status.rejected {
+      color: red;
+    }
+    .application-card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.card-actions {
+  margin-top: 10px;
+}
+
+.card-actions button {
+  margin-right: 10px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.approve-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.reject-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.view-btn {
+  background-color: #2196F3;
+  color: white;
+}
+
+.status.approved {
+  color: green;
+}
+
+.status.rejected {
+  color: red;
+}
+
+.status.pending {
+  color: orange;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-left">
+      <img src="assets/4.png" alt="Logo" />
+      <span class="brand-text">Digital Gram Panchayat</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="admin.html">Dashboard</a></li>
+      <li><a href="about.html" class="active">About Us</a></li>
+      <li><a href="appn.html">📜Applications</a></li>
+      <li><a href="logout.html">🚪Logout</a></li>
+    </ul>
+  </nav>
+
+  <!-- Applications Section -->
+  <section class="applications-section">
+    <h2>All Applications</h2>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Digital Gram Panchayat | All rights reserved.
+  </footer>
+
+  <script type="module" src="adminAppn.js"></script>
+</body>
+
+</html>

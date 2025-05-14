@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create New Service</title>
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="create.css">
+  
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <img src="assets/4.png" alt="Logo" />
+        <span class="brand-text">Digital Gram Panchayat - Create Scheme</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="home.html" id="homeLink">🏡Home</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="index.html" id="loginLink">Login</a></li>
+        <li>
+          <a href="index.html" id="registerLink">Register</a>
+        </li>
+        <li>
+          <a
+            href="logout.html"
+            id="logoutLink"
+            style="display: none"
+            >🚪Logout</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <h2>Add New Scheme / Service</h2>
+      <form id="createServiceForm">
+        <label for="name">Scheme Name</label>
+        <input type="text" id="name" required />
+
+        <label for="department">Department</label>
+        <select id="department" required>
+          <option value="">Select Department</option>
+          <option value="Health Department">Health Department</option>
+          <option value="Social Welfare Department">
+            Social Welfare Department
+          </option>
+          <option value="Food and Civil Supplies">
+            Food and Civil Supplies
+          </option>
+          <option value="Revenue Department">Revenue Department</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="description">Description</label>
+        <textarea id="description" rows="3" required></textarea>
+
+        <label for="eligibility">Eligibility Criteria (comma-separated)</label>
+        <textarea id="eligibility" rows="3" required></textarea>
+
+        <label for="documents">Required Documents (comma-separated)</label>
+        <textarea id="documents" rows="3" required></textarea>
+
+        <label for="fee">Fee</label>
+        <textarea id="fee" rows="1" required></textarea>
+
+        <label for="questions">Application Questions (comma-separated)</label>
+        <textarea id="questions" rows="3" required></textarea>
+
+        <div class="form-btn-wrapper">
+          <button type="submit">Create Scheme</button>
+        </div>
+      </form>
+    </div>
+
+    <footer>
+      &copy; 2025 Digital Gram Panchayat | Made with ❤️ for Rural Empowerment
+    </footer>
+    <script type="module" src="create.js"></script>
+  </body>
+</html>

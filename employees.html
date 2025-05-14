@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <meta http-equiv="Content-Security-Policy" 
+  content="
+    default-src 'self';
+    script-src 'self' https://www.gstatic.com https://www.googleapis.com https://www.gstatic.com/firebasejs/;
+    style-src 'self' https://fonts.googleapis.com;
+    font-src 'self' https://fonts.gstatic.com data:;
+    connect-src 'self' https://firestore.googleapis.com https://*.firebaseio.com https://*.firebaseapp.com;
+">
+
+  <title>Staff Dashboard | Digital Gram Panchayat</title>
+  <link rel="stylesheet" href="staff.css">
+  <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-left">
+      <img src="assets/4.png" alt="Logo" />
+      <span class="brand-text">Digital Gram Panchayat</span>
+    </div>
+    <ul class="nav-links">
+     <li><a href="home.html">🏠Home</a></li>
+     <li><a href="about.html" class="active">About Us</a></li>
+      <li> <a href="employees.html">Dashboard</a></li>
+      <li><a href="logout.html" id="logout" style="display:none;">🚪Logout</a></li>
+    </ul>
+  </nav>
+
+  <!-- Applications Section -->
+  <section class="applications-section">
+    <h2>Welcome, Staff Member!</h2>
+    <div id="appContainer">
+      <h2>All Applications</h2>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Digital Gram Panchayat | All rights reserved.
+  </footer>
+
+
+</body>
+</html>
+  <!-- Firebase Script -->
+  <script type="module" src="staff.js"></script>

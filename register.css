@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+/* Page Background */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f3f8ff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container Styling */
+  .container {
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 2rem 2.5rem;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Heading */
+  .container h2 {
+    color: #17457b;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+  }
+  
+  /* Form Group Layout */
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  .form-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #17457b;
+    outline: none;
+  }
+  
+  /* Dynamic Fields Section */
+  #dynamicFields {
+    margin-top: 1.5rem;
+  }
+  
+  /* Centered Submit Button */
+  .form-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  button[type="submit"] {
+    background-color: #17457b;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0e3258;
+  }
+  

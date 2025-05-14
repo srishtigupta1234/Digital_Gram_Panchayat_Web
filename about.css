@@ -1,0 +1,45 @@
+/* General Page Setup */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f9ff;
+  }
+  
+  
+  .about-wrapper {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+  
+  .about-wrapper h1, h2 {
+    color: #205295;
+  }
+  
+  .about-wrapper ul {
+    list-style-type: none;
+    padding-left: 1rem;
+  }
+  
+  .about-wrapper ul li::before {
+    content: "✔️ ";
+    margin-right: 0.5rem;
+    color: #4f6fdc;
+  }
+  
+  .about-wrapper p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #e6efff;
+    font-size: 0.95rem;
+    color: #333;
+    margin-top: 2rem;
+  }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register for a Scheme</title>
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="register.css">
+</head>
+<body> 
+  <nav>
+  <div class="nav-left">
+    <img src="assets/4.png" alt="Logo">
+    <span class="brand-text">Digital Gram Panchayat</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="home.html" id="homeLink"  class="active">🏡Home</a></li>
+    <li><a href="logout.html" id="logoutLink" style="display:none;">🚪Logout</a></li>
+  </ul>
+</nav>
+
+  <div class="container">
+    <h2>Register for a Scheme</h2>
+
+    <form id="schemeForm">
+      <div class="form-group">
+        <label for="schemeSelect">Select Scheme:</label>
+        <select id="schemeSelect">
+          <option value="">-- Select Scheme --</option>
+        </select>
+      </div>
+
+    <form id="registrationForm" style="display: none;">
+      <h3>Basic Information</h3>
+      <input type="text" id="fullName" placeholder="Full Name" required />
+      <input type="date" id="dob" placeholder="Date of Birth" required />
+      <input type="text" id="aadhar" placeholder="Aadhar Number" required />
+      <textarea id="address" placeholder="Address" required></textarea>
+
+      <div id="dynamicFields"></div>
+
+      <div class="form-btn-wrapper">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+
+  <footer>
+    &copy; 2025 Digital Gram Panchayat | Made with ❤️ for Rural Empowerment
+  </footer>
+
+  <script type="module" src="../scripts/register.js"></script>
+</body>
+</html>
